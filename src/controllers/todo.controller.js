@@ -84,9 +84,7 @@ export const CreateTodo  = async (req, res) => {
         );
         console.log(rows[0]);
 
-        res.status(201).json({
-            mensaje: "Todo creado correctamente",
-        });
+        res.status(201).json(rows[0]);
     }
     catch(error)
     {
